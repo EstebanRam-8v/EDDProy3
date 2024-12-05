@@ -37,6 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtDaCircular = new System.Windows.Forms.TextBox();
             this.txtModi = new System.Windows.Forms.TextBox();
+            this.txtMostrarr = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // BtnCrear
@@ -45,7 +46,7 @@
             this.BtnCrear.Name = "BtnCrear";
             this.BtnCrear.Size = new System.Drawing.Size(75, 23);
             this.BtnCrear.TabIndex = 0;
-            this.BtnCrear.Text = "button1";
+            this.BtnCrear.Text = "Crear Lista";
             this.BtnCrear.UseVisualStyleBackColor = true;
             this.BtnCrear.Click += new System.EventHandler(this.BtnCrear_Click);
             // 
@@ -55,7 +56,7 @@
             this.BtnInser.Name = "BtnInser";
             this.BtnInser.Size = new System.Drawing.Size(75, 23);
             this.BtnInser.TabIndex = 1;
-            this.BtnInser.Text = "button2";
+            this.BtnInser.Text = "Insertar";
             this.BtnInser.UseVisualStyleBackColor = true;
             this.BtnInser.Click += new System.EventHandler(this.BtnInser_Click);
             // 
@@ -65,7 +66,7 @@
             this.BtnVer.Name = "BtnVer";
             this.BtnVer.Size = new System.Drawing.Size(75, 23);
             this.BtnVer.TabIndex = 2;
-            this.BtnVer.Text = "button3";
+            this.BtnVer.Text = "Ver lista";
             this.BtnVer.UseVisualStyleBackColor = true;
             this.BtnVer.Click += new System.EventHandler(this.BtnVer_Click);
             // 
@@ -75,7 +76,7 @@
             this.BtnBus.Name = "BtnBus";
             this.BtnBus.Size = new System.Drawing.Size(75, 23);
             this.BtnBus.TabIndex = 3;
-            this.BtnBus.Text = "button4";
+            this.BtnBus.Text = "Buscar";
             this.BtnBus.UseVisualStyleBackColor = true;
             this.BtnBus.Click += new System.EventHandler(this.BtnBus_Click);
             // 
@@ -85,7 +86,7 @@
             this.BtnModi.Name = "BtnModi";
             this.BtnModi.Size = new System.Drawing.Size(75, 23);
             this.BtnModi.TabIndex = 4;
-            this.BtnModi.Text = "button5";
+            this.BtnModi.Text = "Modificar";
             this.BtnModi.UseVisualStyleBackColor = true;
             this.BtnModi.Click += new System.EventHandler(this.BtnModi_Click);
             // 
@@ -95,7 +96,7 @@
             this.BtnElim.Name = "BtnElim";
             this.BtnElim.Size = new System.Drawing.Size(75, 23);
             this.BtnElim.TabIndex = 5;
-            this.BtnElim.Text = "button6";
+            this.BtnElim.Text = "Eliminar";
             this.BtnElim.UseVisualStyleBackColor = true;
             this.BtnElim.Click += new System.EventHandler(this.BtnElim_Click);
             // 
@@ -117,16 +118,25 @@
             // 
             // txtModi
             // 
-            this.txtModi.Location = new System.Drawing.Point(308, 101);
+            this.txtModi.Location = new System.Drawing.Point(312, 98);
             this.txtModi.Name = "txtModi";
             this.txtModi.Size = new System.Drawing.Size(100, 20);
             this.txtModi.TabIndex = 8;
+            this.txtModi.TextChanged += new System.EventHandler(this.txtModi_TextChanged);
+            // 
+            // txtMostrarr
+            // 
+            this.txtMostrarr.Location = new System.Drawing.Point(34, 191);
+            this.txtMostrarr.Name = "txtMostrarr";
+            this.txtMostrarr.Size = new System.Drawing.Size(444, 20);
+            this.txtMostrarr.TabIndex = 9;
             // 
             // frmListaCircular
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtMostrarr);
             this.Controls.Add(this.txtModi);
             this.Controls.Add(this.txtDaCircular);
             this.Controls.Add(this.label1);
@@ -154,5 +164,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtDaCircular;
         private System.Windows.Forms.TextBox txtModi;
+        private System.Windows.Forms.TextBox txtMostrarr;
     }
 }
